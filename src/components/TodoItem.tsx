@@ -1,4 +1,4 @@
-import { TodoItemProps } from './types'
+import { TodoItemProps } from '../types'
 
 export default function TodoItem({ todo, updateTodo }: TodoItemProps) {
   const onChange = () => {

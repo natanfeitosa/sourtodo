@@ -1,7 +1,7 @@
 import { render } from 'soursop'
-import App from './App'
+import App from './src/App'
 
-import './style.css'
+import './src/style.css'
 
 const container = document.querySelector('#app')!
 render(<App/>, container)

@@ -1,8 +1,9 @@
-import TodoItem from './TodoItem'
-import { useTodoStore } from './store'
+import TodoItem from './components/TodoItem'
+import useTodoStore from './stores/useTodoStore'
 
 export default function App() {
   const todoStore = useTodoStore()
+
   const createTodo = (event: SubmitEvent) => {
     event.preventDefault()
     todoStore.createTodo(event.target.elements.todo.value)
